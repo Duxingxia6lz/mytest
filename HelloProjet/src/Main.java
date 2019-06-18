@@ -11,4 +11,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("git测试");
     }
+
+
+    @Test
+    public void a(){
+        System.out.println("nobody know ");
+    }
 }
