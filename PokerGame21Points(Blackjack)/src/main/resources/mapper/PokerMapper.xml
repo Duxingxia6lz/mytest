@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<!--<context:component-scan base-package="com.itheima.*"/>-->
+
+<mapper namespace="com.itheima.mapper.PokerMapper">
+
+    <!--查询获取所有的牌-->
+    <select id="queryPokerList" resultType="Poker">
+        select * from poker
+    </select>
+
+
+    <!--保存牌-->
+    <insert id="savePoker" parameterType="Poker">
+        insert into poker values (null,#(name),#(value))
+    </insert>
+
+</mapper>
+
