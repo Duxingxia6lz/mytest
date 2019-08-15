@@ -9,5 +9,8 @@
         <module name="PokerGame21Points(Blackjack)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PokerGame21Points(Blackjack)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
