@@ -15,7 +15,7 @@
 
     <!--保存牌-->
     <insert id="savePoker" parameterType="Poker">
-        insert into poker values (null,#(name),#(value))
+        insert into poker(name,value) values (#{name},#{value})
     </insert>
 
 </mapper>

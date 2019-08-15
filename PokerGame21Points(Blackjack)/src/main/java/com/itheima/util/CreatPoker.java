@@ -1,12 +1,14 @@
 package com.itheima.util;
 
 import com.itheima.domain.Poker;
+import org.junit.Test;
 
 import java.util.*;
 
 public class CreatPoker {
 
-    public static void main(String[] args) {
+
+    public static List<Poker> create() {
 
         /**
          * 创造牌,并把牌存到数据库中
@@ -30,7 +32,7 @@ public class CreatPoker {
             pokerlist.add(new Poker(card,11));
 
 
-            //组合2-10
+          /*  //组合2-10
             for (int k = 0; k < numbers2.length; k++) {
                 card = colors[i] + numbers2[k];
 //                pokers.put(card, numbers2[k]);
@@ -43,16 +45,18 @@ public class CreatPoker {
 //                pokers.put(card, 10);
                 pokerlist.add(new Poker(card,10));
             }
-
+*/
 
 
         }
 //        System.out.println(pokers.size());
 //        System.out.println(pokers);
-        System.out.println(pokerlist);
+//        System.out.println(pokerlist);
 
-        for (Poker poker : pokerlist) {
+       /* for (Poker poker : pokerlist) {
             System.out.println(poker);
-        }
+        }*/
+
+        return pokerlist;
     }
 }
